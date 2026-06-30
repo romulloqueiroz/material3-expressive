@@ -44,6 +44,18 @@ export type { IconButtonProps, IconButtonVariant, IconButtonSize } from '../comp
 export type { RippleButtonProps } from '../components/buttons/RippleButton'
 
 // ============================================================================
+// Card Component Types
+// ============================================================================
+
+export type {
+  CardProps,
+  CardContentProps,
+  CardImageProps,
+  CardMenuProps,
+  HorizontalCardProps,
+} from '../components/cards/types'
+
+// ============================================================================
 // Navigation Component Types
 // ============================================================================
 

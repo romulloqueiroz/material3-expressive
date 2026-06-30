@@ -11,6 +11,7 @@ export default defineConfig({
   entry: {
     index: 'src/index.ts',
     'components/buttons': 'src/components/buttons/index.ts',
+    'components/cards': 'src/components/cards/index.ts',
     'components/navigation': 'src/components/navigation/index.ts',
     'components/inputs': 'src/components/inputs/index.ts',
     'components/feedback': 'src/components/feedback/index.ts',

@@ -25,6 +25,11 @@
       "import": "./dist/components/buttons.js",
       "default": "./dist/components/buttons.js"
     },
+    "./components/cards": {
+      "types": "./dist/components/cards.d.ts",
+      "import": "./dist/components/cards.js",
+      "default": "./dist/components/cards.js"
+    },
     "./components/navigation": {
       "types": "./dist/components/navigation.d.ts",
       "import": "./dist/components/navigation.js",

@@ -13,6 +13,7 @@ const distDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..',
 const clientEntries = [
   'index.js',
   'components/buttons.js',
+  'components/cards.js',
   'components/navigation.js',
   'components/inputs.js',
   'components/feedback.js',

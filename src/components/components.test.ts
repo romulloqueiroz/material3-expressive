@@ -21,6 +21,15 @@ describe('Property 1: All Generic Components Exported', () => {
     'RippleButton',
   ] as const
 
+  // Card components (Requirement 3.2)
+  const cardComponents = [
+    'Card',
+    'CardContent',
+    'CardImage',
+    'CardMenu',
+    'HorizontalCard',
+  ] as const
+
   // Navigation components (Requirement 3.3)
   const navigationComponents = [
     'NavigationBar',
@@ -78,6 +87,7 @@ describe('Property 1: All Generic Components Exported', () => {
   // All generic components combined
   const allGenericComponents = [
     ...buttonComponents,
+    ...cardComponents,
     ...navigationComponents,
     ...inputComponents,
     ...feedbackComponents,
@@ -89,6 +99,19 @@ describe('Property 1: All Generic Components Exported', () => {
     fc.assert(
       fc.property(
         fc.constantFrom(...buttonComponents),
+        (componentName) => {
+          expect(LibraryExports).toHaveProperty(componentName)
+          return true
+        }
+      ),
+      { numRuns: 100 }
+    )
+  })
+
+  it('should export all card components', () => {
+    fc.assert(
+      fc.property(
+        fc.constantFrom(...cardComponents),
         (componentName) => {
           expect(LibraryExports).toHaveProperty(componentName)
           return true
